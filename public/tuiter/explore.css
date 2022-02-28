@@ -3,6 +3,11 @@
     border-radius: 25px;
 }
 
+.wd-who-to-follow {
+    color: white;
+    background-color: #222222;
+}
+
 .wd-follow-image {
     height: 50px;
     width: 50px;
@@ -62,7 +67,7 @@
 .wd-search-icon {
     position: absolute;
     top: 8px;
-    left: 10px;
+    left: 15px;
 }
 
 .wd-search {
@@ -101,6 +106,10 @@
 .wd-shift-right {
     margin-left: auto;
     margin-right: auto;
+}
+
+.wd-max-width {
+    max-width: 50%;
 }
 
 

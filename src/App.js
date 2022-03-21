@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 // import './vendors/bootstrap/css/bootstrap.min.css';
-// import './vendors/bootstrap/bootstrap.min.css';
+import './vendors/bootstrap/bootstrap.min.css';
 // import './vendors/fontawesome/css/all.min.css';
 
 import HelloWorld from "./components/HelloWorld";
 import Labs from "./components/Labs";
-import Tuiter from "./components/Tuiter";
+import Tuiter from "./components/Tuiter/index.js";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 import './App.css';

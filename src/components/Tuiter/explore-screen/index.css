@@ -1,0 +1,32 @@
+.wd-search-bar {
+    width: 96%;
+    border-radius: 25px;
+    text-indent: 36px;
+}
+
+.wd-search {
+    position: relative;
+}
+
+.wd-search-icon {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+
+.wd-search-bar-display {
+    position: relative;
+}
+
+.wd-story-img {
+    position: relative;
+    width: 100%;
+}
+
+.wd-bottom-left-text {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    bottom: 8px;
+    left: 8px;
+}

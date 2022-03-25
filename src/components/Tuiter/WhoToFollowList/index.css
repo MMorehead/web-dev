@@ -1,0 +1,14 @@
+.wd-follow-image {
+    height: 50px;
+    width: 50px;
+}
+
+.wd-vertical-align {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.wd-inline {
+    display: inline
+}

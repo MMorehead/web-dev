@@ -46,6 +46,10 @@ const Todos = () => {
                             {...todo,
                                 done: event.target.checked})}
                         type="checkbox"/>
+                    <input
+                        onChange={todoChangeHandler}
+                        value={todo.do}
+                        className="form-control"/>
                     <button onClick={() =>
                         deleteTodoClickHandler(todo)}
                             className="btn btn-danger float-end">

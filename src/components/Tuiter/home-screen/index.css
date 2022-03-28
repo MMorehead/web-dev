@@ -1,0 +1,17 @@
+.wd-whats-happening {
+    min-width: 100%;
+    background-color: black;
+    border-width: 0px;
+    color: lightgrey;
+}
+
+.wd-tuit-btn {
+    float: right;
+    background-color: #2a9fd6;
+    color: white;
+}
+
+.wd-tuit-icon {
+    color: #2a9fd6;
+    margin-right: 12px;
+}

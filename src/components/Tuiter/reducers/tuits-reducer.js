@@ -29,6 +29,9 @@ const tuitsReducer =
                     postedBy: {
                         "username": "ReactJS"
                     },
+                    handle: "ReactJS",
+                    logo: "./images/react.png",
+                    avatar: "./images/react.png",
                     stats: {
                         retuits: 111,
                         likes: 222,

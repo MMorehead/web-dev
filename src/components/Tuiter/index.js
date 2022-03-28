@@ -1,4 +1,4 @@
-import {Outlet} from "react-router-dom";
+import {Outlet, useLocation} from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar";
 //import "./index.css";
 import whoReducer from "./reducers/who-reducer";
@@ -18,7 +18,7 @@ const Tuiter = () => {
         <Provider store={store}>
             <div className="row mt-2">
                 <div className="col-2 col-lg-1 col-xl-2">
-                    <NavigationSidebar/>
+                    <NavigationSidebar active={useLocation().pathname.substr('/tuiter/'.length)}/>
                 </div>
                 <div className="col-10 col-lg-7 col-xl-6">
                     <Outlet/>

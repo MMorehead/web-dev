@@ -11,15 +11,23 @@ const WhatsHappening = () => {
         });
     }
     return (
-        <div className="row">
-                {/*<img src="./images/spaceX.jpeg" className="w-75 rounded-circle col-8"/>*/}
+        <div className="row mb-2">
+                <div className="col-2">
+                    <img src="./images/react.png" className="w-75 rounded-circle"/>
+                </div>
 
-                <div className="col-6 wd-inline">
-                  <textarea value={whatsHappening}
+                <div className="col-10">
+                  <textarea className="wd-whats-happening" value={whatsHappening}
+                            placeholder="What's happening?"
                             onChange={(event) =>
                                 setWhatsHappening(event.target.value)}>
                   </textarea>
-                    <button onClick={tuitClickHandler}>
+                    <hr />
+                    <i className="fas fa-image wd-tuit-icon"></i>
+                    <i className="fas fa-chart-line wd-tuit-icon"></i>
+                    <i className="fas fa-grin wd-tuit-icon"></i>
+                    <i className="fas fa-calendar wd-tuit-icon"></i>
+                    <button onClick={tuitClickHandler} className="wd-tuit-btn rounded-pill border-0">
                         Tuit
                     </button>
                 </div>

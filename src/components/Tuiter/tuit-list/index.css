@@ -1,0 +1,12 @@
+.wd-fg-color-darkgray {
+    color: darkgray;
+}
+
+.wd-avatar {
+    margin-top: 12px;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    display: inline;
+    position: relative;
+}

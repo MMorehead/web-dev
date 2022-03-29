@@ -30,8 +30,8 @@ const tuitsReducer =
                         "username": "ReactJS"
                     },
                     handle: "ReactJS",
-                    logo: "./images/react.png",
-                    avatar: "./images/react.png",
+                    logo: "https://i.imgur.com/eRgGBho.png",
+                    avatar: "https://i.imgur.com/eRgGBho.png",
                     stats: {
                         retuits: 111,
                         likes: 222,

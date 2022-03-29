@@ -1,6 +1,6 @@
 [
   {
-    "avatarIcon": "./images/java.png",
+    "avatarIcon": "/components/Tuiter/images/java.png",
     "userName": "Java",
     "handle": "Java"
   },

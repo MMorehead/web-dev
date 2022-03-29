@@ -13,7 +13,7 @@ const WhatsHappening = () => {
     return (
         <div className="row mb-2">
                 <div className="col-2">
-                    <img src="./images/react.png" className="w-75 rounded-circle"/>
+                    <img src="https://i.imgur.com/eRgGBho.png" className="w-75 rounded-circle"/>
                 </div>
 
                 <div className="col-10">

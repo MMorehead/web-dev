@@ -1,20 +1,18 @@
 import WhoToFollowListItem from "./who-to-follow-list-item"
-import who from "./who.json"
+import {useSelector} from "react-redux";
 import React from "react";
 const WhoToFollowList = () => {
+    const who = useSelector(state => state.who);
     return (
-        <div>
-            <ul className="list-group wd-who-to-follow">
-                <li className="list-group-item list-group-item-action">
-                    Who to follow
-                </li>
-
-                {who.map(who => {
-                return (<WhoToFollowListItem who={who}/>);
-                })
+        <ul className="list-group">
+            <li className="list-group-item">
+                <strong>Who To Follow</strong>
+            </li>
+            {
+                who.map && who.map(who =>
+                <WhoToFollowListItem who={who}/>)
             }
-            </ul>
-        </div>
+        </ul>
     );
 }
 export default WhoToFollowList;

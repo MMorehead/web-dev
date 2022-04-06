@@ -1,6 +1,5 @@
 import {Outlet, useLocation} from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar";
-//import "./index.css";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
 import {combineReducers, createStore} from "redux";

@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import './index.css';
 import {useDispatch} from "react-redux";
 import TuitStats from "./tuit-stats";
+import {deleteTuit}
+    from "../actions/tuits-actions";
 
 const TuitListItem = (
     {
@@ -25,14 +27,12 @@ const TuitListItem = (
             stats: {
                 comments: 123,
                 retuits: 234,
-                likes: 345
+                likes: 345,
+                dislikes: 10
             }
         }
     }) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
 
     return(
         <div>
@@ -42,7 +42,7 @@ const TuitListItem = (
                         <img src={tuit.avatar} className="col-8 rounded-circle"/>
                     </div>
                     <div className="col-9">
-                        <p className="wd-inline"><strong>{tuit.postedBy.username}</strong></p>
+                        <p className="wd-inline"><strong>{tuit.postedBy?.username}</strong></p>
                         <p className="wd-inline ms-1 wd-fg-color-darkgray">@{tuit.handle}</p>
                         <p> {tuit.tuit} </p>
                         {
@@ -67,9 +67,8 @@ const TuitListItem = (
                         </div>
                     </div>
                     <div className="col-1">
-                        <i onClick={() =>
-                            deleteTuit(tuit)}
-                           className="fas fa-times fa-pull-right"></i>
+                        <i className="fas fa-times fa-pull-right"
+                           onClick={() => deleteTuit(dispatch, tuit)}></i>
                     </div>
                 </div>
             </li>

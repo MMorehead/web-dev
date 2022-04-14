@@ -31,6 +31,7 @@ const WhatsHappening = () => {
                                     stats: {
                                         likes: 0,
                                         dislikes: 0,
+                                        retuits: 0,
                                     },
                                     topic: "Web Development",
                                     postedBy: {
